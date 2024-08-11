@@ -22,11 +22,21 @@ url: "skobba.net" # the base hostname & protocol for your site, e.g. http://exam
 twitter_username: skobba
 github_username:  skobba
 
+# theme: just-the-docs
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+
+include:
+  - _pages
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
