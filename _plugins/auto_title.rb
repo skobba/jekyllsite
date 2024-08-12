@@ -13,6 +13,16 @@ module Jekyll
       # When you define a collection (like pages), Jekyll removes those files from site.pages and 
       # places them in site.collections['pages'].docs instead.
       # Iterate over the collection items instead of site.pages
+      puts "site pages:"
+      site.pages.each do |page|
+        puts "Path: #{page.path}"
+      end
+
+      puts "site.collections:"
+      site.collections[target_collection].docs.each do |doc|
+        puts "Path: #{doc.path}"
+      end
+
       site.collections[target_collection].docs.each do |doc|
 
         # Degug

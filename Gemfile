@@ -11,7 +11,7 @@ source "https://rubygems.org"
 gem "jekyll", "~> 3.10.0"
 
 # NB: This package breaks the site.pages stuff in AutoTile
-# gem "github-pages", group: :jekyll_plugins
+gem "github-pages", group: :jekyll_plugins
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
